@@ -1,4 +1,16 @@
 # IMPPAT_Database_VS
+
+## Table of Contents
+
+- [Requirements](#requirements)
+  - [Python Version](#1-python-version)
+  - [Python Packages](#2-python-packages)
+  - [Web Browser](#3-web-browser)
+- [Description of Primary Constraint](#description-of-primary-constraint)
+- [The Solution](#the-solution)
+- [Overall Flow](#overall-flow)
+- [Citation for IMPPAT Database](#citation-for-imppat-database)
+
 ## Requirements
 
 To run the provided scripts for extracting and downloading data from the IMPPAT database, ensure your environment meets the following requirements:
