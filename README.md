@@ -9,8 +9,9 @@ As mentioned earlier, each molecule has a webpage containing its structure files
 `f"{BASE_URL}{IMPHY ID}`
 Extracting the structure file from a list of IMPHY IDs(`.csv`) is carried out by `PDBQTfromWeb.py` where the user can specify what kind of structure file they require by changing the field within `By.XPATH` on line 64. The respective tag for the structure file of your interest can be known from inspecting the structure file icon element.
 Having figured out how to download structure file for a csv of IMPHY IDs, we want to now populate the csv with molecules of our choice.
-The IMPPAT database lets you apply filters so that you can view molecules of your choice. What appears is a list of clickable IMPHY IDs which lead you to the molecule's webpage.
+The IMPPAT database lets you apply filters in the `ADVANCED SEARCH` option so that you can view molecules of your choice. What appears is a list of clickable IMPHY IDs which lead you to the molecule's webpage.
 
+![Search Result Window](IMPHY_IDs.png "Drug-like Filter Result Window")
 
 
 However, for our purposes, it would suffice to simply 'note down' all the IMPHY IDs onto an output csv, which can then be used as input to `PDBQTfromWeb.py`. If these IMPHY IDs were manageable in number, we could have literally noted them down on a csv. However, in most real-life scenarios, the number of molecules satisfying the conditions of your filters is going to be too large to do that. So, we need to automate this process as well, thereby employing `IMPPAT_ID_Script.py`, which writes the relevant IMPHY IDs onto `imppat_druglike_ids.csv`(included in this repository). 
@@ -19,4 +20,7 @@ For my application, I applied the druglike filters. However, the filters can eas
 ---
 
 ## Overall Flow
-> `Customise Filters in IMPPAT_ID_Script.py -> Run PDBQTfromWeb.py` 
+<p align="center">> `Customise Filters in IMPPAT_ID_Script.py -> Run PDBQTfromWeb.py` </p>
+
+![Overall Flowchart](IMPPAT_Flow.png "Flowchart for Protocol")
+
