@@ -1,4 +1,33 @@
 # IMPPAT_Database_VS
+## Requirements
+
+To run the provided scripts for extracting and downloading data from the IMPPAT database, ensure your environment meets the following requirements:
+
+### 1. Python Version
+
+- **Python 3.8 or higher** is recommended.
+
+### 2. Python Packages
+
+Install the following Python packages using `pip`:
+
+- **selenium**  
+  For browser automation and web scraping.
+
+- **webdriver-manager**  
+  Automatically manages the correct version of the ChromeDriver.
+
+- **pandas**  
+  For handling CSV files (used in the second script).
+
+- **requests**  
+  For downloading files from the web.
+  
+### 3. Web Browser
+
+- **Google Chrome**  
+  The scripts use ChromeDriver to automate Chrome. Make sure Chrome is installed on your system.
+
 ## Description of Primary Constraint
 The main challenge behind scraping data from the [IMPPAT](https://cb.imsc.res.in/imppat/) database is the following condition - to download each structure file, one must visit its designated webpage in the database. There is no other method to download the structure. A virtual screening requires several molecules to be docked/screened against a target receptor. Hence, it becomes impractical to manually visit each molecule's webpage to extract its structure. Most databases usually have the clickable download link adjacent to the molecule name/ID which makes scraping them more comfortable. 
 
@@ -28,6 +57,7 @@ For my application, I applied the druglike filters. However, the filters can eas
   <img src="IMPPAT_Flow.jpg" alt="Summarised Flowchart" width="300"/>
 </p>
 
-<!-- ![Overall Flowchart](IMPPAT_Flow.jpg "Flowchart for Protocol") -->
+### Citation for IMPPAT Database
+> Mohanraj, K., Karthikeyan, B. S., Vivek-Ananth, R. P., Chand, R. P., Aparna, S. R., Mangalapandi, P., & Samal, A. (2018). IMPPAT: A curated database of Indian Medicinal Plants, Phytochemistry And Therapeutics. *Scientific Reports*, 8, 4329. https://doi.org/10.1038/s41598-018-22631-z
 
 
