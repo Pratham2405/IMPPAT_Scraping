@@ -35,10 +35,10 @@ def download_pdb(imphy_id, pdb_url):
                 downloaded += len(data)
                 pdb_file.write(data)
                 print(f"\rDownloading {imphy_id}.pdbqt: {downloaded}/{file_size} bytes", end='')
-        print(f"\n✅ Downloaded: {imphy_id}.pdbqt")
+        print(f"\n Downloaded: {imphy_id}.pdbqt")
         return True
     else:
-        print(f"❌ Failed to download {imphy_id}.pdbqt (HTTP Status: {response.status_code})")
+        print(f"Failed to download {imphy_id}.pdbqt (HTTP Status: {response.status_code})")
         return False
 
 try:
@@ -74,17 +74,17 @@ try:
                 file_path = os.path.join("pdbqt_structures", f"{imphy_id}.pdbqt")
                 file_size = os.path.getsize(file_path)
                 if file_size > 0:
-                    print(f"✅ Verified: {imphy_id}.pdbqt (Size: {file_size} bytes)")
+                    print(f"Verified: {imphy_id}.pdbqt (Size: {file_size} bytes)")
                 else:
-                    print(f"❌ Verification failed: {imphy_id}.pdbqt (Size: 0 bytes)")
+                    print(f"Verification failed: {imphy_id}.pdbqt (Size: 0 bytes)")
             
         except Exception as e:
-            print(f"❌ Error processing {imphy_id}: {str(e)}")
+            print(f"Error processing {imphy_id}: {str(e)}")
 
         # Polite delay between requests
         time.sleep(2)
 
-    print("\n🎉 All available PDBQT files have been processed.")
+    print("\n All available PDBQT files have been processed.")
 
 except Exception as e:
     print(f"Critical error: {str(e)}")
