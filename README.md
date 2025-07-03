@@ -69,6 +69,8 @@ For my application, I applied the druglike filters. However, the filters can eas
   <img src="IMPPAT_Flow.jpg" alt="Summarised Flowchart" width="300"/>
 </p>
 
+---
+
 ### Citation for IMPPAT Database
 > Mohanraj, K., Karthikeyan, B. S., Vivek-Ananth, R. P., Chand, R. P., Aparna, S. R., Mangalapandi, P., & Samal, A. (2018). IMPPAT: A curated database of Indian Medicinal Plants, Phytochemistry And Therapeutics. *Scientific Reports*, 8, 4329. https://doi.org/10.1038/s41598-018-22631-z
 
