@@ -20,10 +20,10 @@ For my application, I applied the druglike filters. However, the filters can eas
 ---
 
 ## Overall Flow
-><p align="center"> `Customise Filters in IMPPAT_ID_Script.py -> Run PDBQTfromWeb.py` </p>
+><p align="center"> Customise Filters in IMPPAT_ID_Script.py -> Run PDBQTfromWeb.py </p>
 
 <p align="center">
-  <img src="IMPPAT_Flow.jpg" alt="Summarised Flowchart" width="200"/>
+  <img src="IMPPAT_Flow.jpg" alt="Summarised Flowchart" width="500"/>
 </p>
 
 <!-- ![Overall Flowchart](IMPPAT_Flow.jpg "Flowchart for Protocol") -->
