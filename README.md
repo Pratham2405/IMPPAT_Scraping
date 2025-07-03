@@ -22,9 +22,8 @@ For my application, I applied the druglike filters. However, the filters can eas
 ## Overall Flow
 
 ><p align="center"> Customise Filters in IMPPAT_ID_Script.py -> Run PDBQTfromWeb.py </p>
-
-
-
+<p></p>
+<p></p>
 <p align="center">
   <img src="IMPPAT_Flow.jpg" alt="Summarised Flowchart" width="300"/>
 </p>
